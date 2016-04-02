@@ -19,7 +19,7 @@ app.use(middleware.logger); // this use has to be at the top for application lev
 app.use(express.static(__dirname + '/public')); // static folders
 
 app.get('/admin',middleware.requireAuthentication, function(req, res){ // here second argument is a route based middleware
-  res.send('This is Admin Page!');
+  res.send('Welcome To Admin Page!');
 });
 
 app.listen(PORT, function(){
